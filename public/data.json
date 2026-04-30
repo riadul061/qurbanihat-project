@@ -9,7 +9,7 @@
     "age": 3,
     "location": "Bogura",
     "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
-    "image": "https://i.postimg.cc/8zjZK8Zk/cow1.jpg",
+    "image": "https://i.postimg.cc/kXQTLd2X/alexas-fotos-cow-2788835-1920.jpg",
     "category": "Large Animal"
   },
   {
@@ -22,7 +22,7 @@
     "age": 4,
     "location": "Rajshahi",
     "description": "High-quality Sahiwal cow known for excellent meat production.",
-    "image": "https://i.postimg.cc/wMZ6vK6T/cow2.jpg",
+    "image": "https://i.postimg.cc/KjfhG30q/cow-eating-tree-leaves.jpg",
     "category": "Large Animal"
   },
   {
@@ -35,7 +35,7 @@
     "age": 5,
     "location": "Dhaka",
     "description": "Imported breed with large body size and premium quality.",
-    "image": "https://i.postimg.cc/tTj8gV1X/cow3.jpg",
+    "image": "https://i.postimg.cc/CL5QB251/kapa65-cow-391291-1920.jpg",
     "category": "Large Animal"
   },
   {
@@ -48,7 +48,7 @@
     "age": 2,
     "location": "Mymensingh",
     "description": "Popular Bangladeshi goat breed known for tender meat.",
-    "image": "https://i.postimg.cc/3JwRk9Z9/goat1.jpg",
+    "image": "https://i.postimg.cc/cJShmkx6/jaclou-dl-goat-2825055-1920.jpg",
     "category": "Small Animal"
   },
   {
@@ -61,12 +61,12 @@
     "age": 3,
     "location": "Khulna",
     "description": "Tall and strong goat suitable for premium Qurbani.",
-    "image": "https://i.postimg.cc/mZp5h9rJ/goat2.jpg",
+    "image": "https://i.postimg.cc/15FDj0Y0/nikiko-billy-goat-459232-1920.jpg",
     "category": "Small Animal"
   },
   {
     "id": 6,
-    "name": "Deshi White Goat",
+    "name": "Deshi White Goat ",
     "type": "Goat",
     "breed": "Local White",
     "price": 18000,
@@ -74,7 +74,7 @@
     "age": 2,
     "location": "Sylhet",
     "description": "Healthy white goat raised on natural খাদ্য.",
-    "image": "https://i.postimg.cc/qv7m2nYx/goat3.jpg",
+    "image": "https://i.postimg.cc/027VhKt0/butterflystroke-goat-4836418-1920.jpg",
     "category": "Small Animal"
   },
   {
@@ -87,7 +87,7 @@
     "age": 4,
     "location": "Chattogram",
     "description": "Famous local breed with strong جسم and ভালো মানের মাংস.",
-    "image": "https://i.postimg.cc/7Yk7jW0X/cow4.jpg",
+    "image": "https://i.postimg.cc/hPRr8PSb/abeijeman-cow-4865944-1920.jpg",
     "category": "Large Animal"
   },
   {
@@ -100,7 +100,7 @@
     "age": 3,
     "location": "Rangpur",
     "description": "Hybrid cow with balanced size and meat quality.",
-    "image": "https://i.postimg.cc/hjK2R1jB/cow5.jpg",
+    "image": "https://i.postimg.cc/8cS6vcLx/viviane6276-animal-3976397-1920.jpg",
     "category": "Large Animal"
   }
 ]
