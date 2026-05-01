@@ -42,7 +42,7 @@ const FeaturedAnimals = async () => {
               </p>
 
               {/* ✅ Correct route */}
-              <Link href={`/details/${photo.id}`}>
+              <Link href={`/all-animals/${photo.id}`}>
                 <Button className="mt-3 w-full bg-green-700 text-white hover:bg-green-800">
                   View Details
                 </Button>

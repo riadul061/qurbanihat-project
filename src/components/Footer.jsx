@@ -1,25 +1,24 @@
+// components/Footer.jsx
+
 import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="relative mt-24">
-      <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
 
-      {/* Background Layer */}
+      {/* Top Divider */}
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
+
+      {/* Background */}
       <div className="absolute inset-0 -z-10 bg-white dark:bg-[#0a0a0b]" />
-
-      {/* Subtle Gradient Glow */}
-      <div
-        className="absolute inset-0 -z-10 bg-linear-to-tr 
-        from-purple-500/5 via-transparent to-blue-500/5 
-        dark:from-purple-500/10 dark:to-blue-500/10 blur-3xl"
-      />
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-6 py-16">
+
         {/* Top Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
@@ -31,13 +30,13 @@ const Footer = () => {
                 className="dark:brightness-200"
               />
               <h2 className="text-xl font-semibold tracking-tight text-black dark:text-white">
-                QurbaniHat 
+                QurbaniHat
               </h2>
             </div>
-
             <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 max-w-xs">
-              A modern livestock marketplace where users can explore animals for Qurbani such as cows and goats. Users can view details and place a booking after authentication.
-
+              Bangladesh&apos;s trusted online platform for buying sacrificial
+              animals during Eid ul-Adha. We connect verified sellers with
+              buyers across the country.
             </p>
           </div>
 
@@ -48,26 +47,12 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
               <li>
-                <Link
-                  href="/generate"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
-                  Order now
+                <Link href="/all-animals" className="hover:text-black dark:hover:text-white transition">
+                  All Animals
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/all-photos"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
-                  Gallery
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/pricing"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
+                <Link href="/pricing" className="hover:text-black dark:hover:text-white transition">
                   Pricing
                 </Link>
               </li>
@@ -81,76 +66,84 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
               <li>
-                <Link
-                  href="/about"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
+                <Link href="/about" className="hover:text-black dark:hover:text-white transition">
                   About
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
+                <Link href="/contact" className="hover:text-black dark:hover:text-white transition">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/terms"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
+                <Link href="/terms" className="hover:text-black dark:hover:text-white transition">
                   Terms
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* CTA Block */}
-          <div className="space-y-4">
+          {/* Contact Info */}
+          <div className="space-y-3">
             <h3 className="text-sm font-semibold text-black dark:text-white">
-              Start order
+              Contact Us
             </h3>
-
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Buy animals easily for Qurbani
-            </p>
-
-            <Link
-              href="/signup"
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full 
-              bg-black text-white dark:bg-white dark:text-black 
-              text-sm font-medium transition-all duration-200 
-              hover:scale-[1.02] hover:shadow-lg hover:shadow-black/10 dark:hover:shadow-white/10"
-            >
-              Order now
-            </Link>
+            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+              <li className="flex items-center gap-2">
+                <span>📍</span> Dhaka, Bangladesh
+              </li>
+              <li className="flex items-center gap-2">
+                <span>📞</span>
+                <a href="tel:+8801700000000" className="hover:text-black dark:hover:text-white transition">
+                  +880 1700-000000
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <span>✉️</span>
+                <a href="mailto:support@qurbanihat.com" className="hover:text-black dark:hover:text-white transition">
+                  support@qurbanihat.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <span>🕐</span> Sat – Thu: 9am – 6pm
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
+        {/* Social Links */}
+        <div className="mt-10">
+          <p className="text-sm font-semibold text-black dark:text-white mb-4">
+            Follow Us
+          </p>
+          <div className="flex gap-4">
+              {/* ✅ Fix 1: Added required width & height to Image */}
+              <Image src="/assets/instagram.png" alt="Instagram" width={20} height={20} />
+            
+              <Image src="/assets/facebook.png" alt="Facebook" width={20} height={20} />
+            
+              <Image src="/assets/twitter.png" alt="Twitter" width={20} height={20} />
+            
+          </div>
+        </div>
 
-        {/* Bottom */}
+        {/* Bottom Divider */}
+        <div className="mt-12 h-px w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
+
+        {/* Bottom Bar */}
         <div className="mt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
-          <p>© {new Date().getFullYear()} pixgen. All rights reserved.</p>
-
+          {/* ✅ Fix 2: Was "pixgen" — changed to QurbaniHat */}
+          <p>© {new Date().getFullYear()} QurbaniHat. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <Link
-              href="/privacy"
-              className="hover:text-black dark:hover:text-white transition"
-            >
+            <Link href="/privacy" className="hover:text-black dark:hover:text-white transition">
               Privacy
             </Link>
-            <Link
-              href="/terms"
-              className="hover:text-black dark:hover:text-white transition"
-            >
+            <Link href="/terms" className="hover:text-black dark:hover:text-white transition">
               Terms
             </Link>
           </div>
         </div>
+
       </div>
     </footer>
   );
