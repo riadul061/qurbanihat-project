@@ -1,3 +1,37 @@
+ Project Name :
+
+ QurbaniHat
+
+A modern livestock booking platform for Qurbani — browse, explore, and reserve animals with ease.
+
+Purpose:
+
+QurbaniHat is a frontend web application designed to simplify the process of booking livestock for Qurbani. Users can browse available animals such as cows and goats, view detailed information about each animal, and place a booking securely after authentication.
+
+ Live URL: "https://qurbanihat-project.vercel.app/"
+
+ Key Features:
+
+
+Livestock Marketplace — Browse a curated list of cows, goats, and other Qurbani animals 
+
+ Animal Detail Pages — View weight, breed, price, and other details for each animal
+
+Authentication — Secure user sign-up and login powered by BetterAuth
+
+Booking System — Authenticated users can place and manage bookings
+
+Responsive Design — Fully optimized for mobile and desktop screens
+
+Fast Performance — Built with Next.js for server-side rendering and fast page loads
+
+ Tech Stack & npm Packages:
+ Package: Next.js, BetterAuth, Mongodb
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
