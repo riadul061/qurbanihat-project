@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { FaFacebook } from "react-icons/fa";
+import { TbBrandInstagram } from "react-icons/tb";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -117,13 +120,12 @@ const Footer = () => {
             Follow Us
           </p>
           <div className="flex gap-4">
-              {/* ✅ Fix 1: Added required width & height to Image */}
-              <Image src="/assets/instagram.png" alt="Instagram" width={20} height={20} />
-            
-              <Image src="/assets/facebook.png" alt="Facebook" width={20} height={20} />
-            
-              <Image src="/assets/twitter.png" alt="Twitter" width={20} height={20} />
-            
+             <FaFacebook />
+             <TbBrandInstagram />
+             <FaXTwitter />
+
+
+
           </div>
         </div>
 
