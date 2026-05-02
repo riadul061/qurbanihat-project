@@ -1,9 +1,19 @@
 import Image from "next/image";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import BookingForm from "@/components/BookingForm";
+import { auth } from "@/lib/auth";
+import { headers } from "next/headers";
 
 export default async function DetailsPage({ params }) {
-  // Bug 1: `await params` gives you the params object, then destructure `id` from it
+  // ✅ Check session first — server-side protection
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
+
+  if (!session?.user) {
+    redirect("/login");
+  }
+
   const { id } = await params;
 
   const res = await fetch(
@@ -11,16 +21,11 @@ export default async function DetailsPage({ params }) {
     { cache: "no-store" }
   );
 
-  // Bug 2: Must check res.ok BEFORE calling res.json()
   if (!res.ok) return notFound();
 
   const photos = await res.json();
 
-  // Bug 3: Was using undefined `id` variable — now correctly uses destructured id
-  // Bug 4: Was checking `!photos` (the array) instead of `!photo` (the found item)
-  const photo = photos.find(
-    (item) => item.id === parseInt(id)
-  );
+  const photo = photos.find((item) => item.id === parseInt(id));
 
   if (!photo) return notFound();
 
@@ -30,8 +35,8 @@ export default async function DetailsPage({ params }) {
         <Image
           src={photo.image}
           alt={photo.name}
-          width={100}
-          height={100}
+          width={600}
+          height={400}
           className="w-full h-80 object-cover rounded-xl"
         />
 
